@@ -1,0 +1,40 @@
+:root {
+--primary-text-color: rgba(0, 0, 0, 0.8);
+--title-text-color: #000000;
+--accent-color: #18A0FB;
+}
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+}
+.list {
+    list-style: none;
+}
+/* основной цвет текста color: #000000; */
+/* вторичный цвет текста color: rgba(0, 0, 0, 0.8); */
+/* Белый цвет #FFFFFF */
+/* акцент background: #18A0FB */
+/* для вкладки background: #F5F5F5; */
+.logo {
+    color: var(--title-text-color);
+}
+/* site nav */
+.site-nav .link
+{
+    color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus
+{color: var(--title-text-color);}
+/* Hero */
+.hero-title{color: var(--title-text-color);}
+
+/* Section */
+.section-title
+{color: var(--title-text-color);}
+ /* Features */
+.features-list .title {color: var(--title-text-color);}
+.features-list .link {color: var(--accent-color);}
+
+/* Examples Work List */
+.work-list .title{ color: var(--title-text-color);}
