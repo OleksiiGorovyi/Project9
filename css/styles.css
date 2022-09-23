@@ -9,59 +9,142 @@
 --accent-color: #18A0FB;
 --primery-white-color: #FFFFFF;
 }
+
 body {
-    background-color: var(--primery-white-color)
-    color: var(--primary-text-color);
-    font-family: Montserrat, sans-serif;
-    letter-spacing: -0.015em;
-    font-size: 18px;
-    line-height: 1.67;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -0.015em;
+        font-size: 18px;
+        line-height: 1.67;
+        background-color: var(--primery-white-color);
+        color: var(--primary-text-color);
 }
+
 .list {
     list-style: none;
 }
+.link {
+    list-style: none;
+}
+
+.hofo:hover,
+.hofo:focus {color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  /* -----Buttons-------- */
+
+  .seondary {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+  }
+  .primary {
+    background-color: #FFFFFF;
+    color: var(--accent-color);
+  }
+
+
+/* ----------Header------------ */
 
 .logo {
     color: var(--title-text-color);
-    font-family: Comfortaa, cursive;
-    font size: 28px; 
-    line height: 1.14;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 28px; 
+    line-height: 1.14;
     text-decoration: none;
 }
 /* site nav */
-.site-nav .link
-{
-    color: var(--accent-color);
+
+
+.header-link {
+    font-weight: 500;
+        font-size: 15px;
+        line-height: calc(18 / 15);
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: #18A0FB;
+}
+
+
+.button-primary,
+.button-secondary {
         font-weight: 500;
         font-size: 15px;
-        line-height: 1.2;
-        text-decoration: none;
-}
-.site-nav .link:hover,
-.site-nav .link:focus
-{color: var(--title-text-color);}
+        line-height: calc(18 / 15);
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+    }
 
-/* Hero */
+.log-button {
+    color: #18A0FB;
+    background-color: #FFFFFF;
+}
+.reg-button {
+    background: var(--accent-color);
+color: #FFFFFF;
+}
+
+/* ---------Hero----------------*/
+
 .hero-title {color: var(--title-text-color);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
 text-align: center;}
 
+.hero-button {
+    font-weight: 500;
+        font-size: 17px;
+        line-height: calc(21 / 17);
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: #FFFFFF;
+        background: #18A0FB;
+}
+
 /* Section and Examples*/
-.section-title
+
+ /* Features */
+
+.features-section-title
 {color: var(--title-text-color);
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
-    text-align: center;}
+    text-align: center;
+}
 
-    .section-description{
-            font-size: 36px;
-            line-height: 1.39;
+    .features-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: -0.015em;
+        color: var(--title-text-color);
     }
+    
+.features-text {
+        font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: -0.015em;
+color: rgba(0, 0, 0, 0.8);
+}
 
- /* Features */
 .features-list .title,
 .work-list .title
  {color: var(--title-text-color);
@@ -72,20 +155,71 @@ text-align: center;}
 
 .features-list .link {color: var(--accent-color);}
 
-/* Button */
-.button {
-    color: var(--title-text-color);
-    background-color: var(--primery-white-color);
-    font-weight: 500;
-        font-size: 15px;
-        line-height: 1.2;
-        text-decoration: none;
+/* features Button */
 
+.features-button {
+    font-weight: 500;
+font-size: 15px;
+line-height: calc(18 / 15);
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+color: #18A0FB;
 }
-.button.primary {
-    color: var(--primery-white-color);
-    background-color: var(--accent-color);
+
+/* ---------Work-------- */
+
+
+.work-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+    color: var(--title-text-color);
 }
-.button.secondary {color: var(--accent-color);
-background-color: var(--primery-white-color);
+
+.work-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* --------client-------- */
+
+
+.client-title {
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: var(--title-text-color);
+}
+
+.client-text {
+    font-size: 36px;
+line-height: 1.39;
+text-align: center;
+letter-spacing: -0.015em;
+color: rgba(0, 0, 0, 0.8);
+}
+
+/* -------registration------- */
+
+.registration-text {
+    font-size: 36px;
+line-height: 1.39;
+letter-spacing: -0.015em;
+color: rgba(0, 0, 0, 0.8);
+}
+
+.registration-button {
+    font-weight: 500;
+font-size: 17px;
+line-height: calc(21 / 17);
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+color: #FFFFFF;
+background: #18A0FB;
 }

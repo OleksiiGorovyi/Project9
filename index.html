@@ -7,6 +7,7 @@
     <title>Sample Wireframe</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="page">
@@ -14,17 +15,15 @@
     <header>
       <nav class="navigation">
         <a href=""><img src="./images/Sample Logo.svg" alt="logo" class="logo"/></a>
-
         <ul class="site-nav list">
-          <li><a href="" class="link">Features</a></li>
-          <li><a href="" class="link">Pricing</a></li>
-          <li><a href="" class="link">Community</a></li>
-          <li><a href="" class="link">Support</a></li>
+          <li><a href="" class="header-link link hofo">Features</a></li>
+          <li><a href="" class="header-link link hofo">Pricing</a></li>
+          <li><a href="" class="header-link link hofo">Community</a></li>
+          <li><a href="" class="header-link link hofo">Support</a></li>
         </ul>
-
         <ul class="auth-nav list">
-          <li><a href=""class="button primary">Log in</a></li>
-          <li><a href=""class="button secondary">Register</a></li>
+          <li><a href=""class="log-button hofo secondary">Log in</a></li>
+          <li><a href=""class="reg-button hofo primary">Register</a></li>
         </ul>
       </nav>
     </header>
@@ -33,60 +32,59 @@
     <div>
       <section class="hero">
         <h1 class="hero-title">The largest community of photo enthusiasts</h1>
-        <a href="" class="button primary">Join Today</a>
+        <a href="" class="hero-button hofo">Join Today</a>
       </section>
     </div>
-    <!--преимущества-->
-    <section class="section">
-      <h2 class="section-title">Snap photos and share like<br />never before</h2>
+    <!--features-->
+    <section class="features-section">
+      <h2 class="feateres-section-title">Snap photos and share like<br />never before</h2>
       <ul class="features-list list">
         <li>
-          <h3 class="title">Sed ut perspiciatis</h3>
-          <p>
+          <h3 class="features-title">Sed ut perspiciatis</h3>
+          <p class="features-text">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
             fugit, sed quia consequuntur magni dolores eos qui ratione
             voluptatem sequi nesciunt. Neque porro quisquam est.
           </p>
-          <a href="" class="button secondary">Learn more</a>
+          <a href="" class="features-button hofo primary">Learn more</a>
         </li>
         <li>
-          <h3 class="title">Lorem ipsum dolor</h3>
-          <p>
+          <h3 class="features-title">Lorem ipsum dolor</h3>
+          <p class="features-text">
             Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
             nostrud exercitation ullamco laboris nisi.
           </p>
-          <a href=""class="button secondary">Learn more</a>
+          <a href=""class="features-button hofo">Learn more</a>
         </li>
         <li>
-          <h3 class="title">Nemo enim ipsam</h3>
-          <p>
+          <h3 class="features-title">Nemo enim ipsam</h3>
+          <p class="features-text">
             Consequuntur magni dolores eos qui ratione voluptatem sequi
             nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
             amet, consectetur, adipisci velit, sed quia non numquam.
           </p>
-          <a href=""class="button secondary">Learn more</a>
+          <a href=""class="features-button hofo">Learn more</a>
         </li>
         <li>
-          <h3 class="title">Tempor incididunt</h3>
-          <p>
+          <h3 class="features-title">Tempor incididunt</h3>
+          <p class="features-text">
             Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
             qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
             sed quia non numquam eius modi tempora.
           </p>
-          <a href=""class="button secondary">Learn more</a>
+          <a href=""class="features-button hofo">Learn more</a>
         </li>
       </ul>
     </section>
     <!--пример работ-->
-    <section class="section">
-      <h2 class="section-title">Примеры работ</h2>
-
+    <section class="work-section">
+      <h2 class="visually-hidden">Примеры работ</h2>
       <ul class="work-list list">
         <li>
           <img src="./images/Rectangle.svg" alt="" width="400px" />
-          <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-          <p>
+          <h3 class="work-title">Sed ut perspiciatis unde omnis</h3>
+          <p class="work-text">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
             fugit, sed quia consequuntur magni dolores eos qui ratione
             voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
@@ -94,8 +92,8 @@
         </li>
         <li>
           <img src="./images/Rectangle.svg" alt="" width="400px" />
-          <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-          <p>
+          <h3 class="work-title">Sed ut perspiciatis unde omnis</h3>
+          <p class="work-text">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
             fugit, sed quia consequuntur magni dolores eos qui ratione
             voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
@@ -103,47 +101,47 @@
         </li>
       </ul>
     </section>
-    <!--клиенты-->
-    <section class="section">
-      <h2 class="section-title">You're in good company</h2>
-      <p class="section-description">
+    <!--Clients-->
+    <section class="client-section">
+      <h2 class="client-title">You're in good company</h2>
+      <p class="client-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore
       </p>
-      <ul class="list">
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+      <ul class="client-list list">
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/Rectangle8.svg" alt="" /></a>
+        <li class="client-item">
+          <a href=""><img src="./images/Rectangle8.svg" alt="name" /></a>
         </li>
       </ul>
     <section>
-      <!--регистрация-->
-      <section>
-        <p class="section-description">
+      <!--registration-->
+      <section class="registration">
+        <p class="registration-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         </p>
-        <a href=""class="button primary">Join Today</a>
-        <a href=""class="button secondary">Contact us</a>
+        <a href=""class="registration-button primary hofo">Join Today</a>
+        <a href=""class="registration-button secondary hofo">Contact us</a>
       </section>
     </main>
     <!--Footer-->
