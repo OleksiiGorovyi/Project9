@@ -21,9 +21,11 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .link {
-    list-style: none;
+    text-decoration: none;
 }
 
 .hofo:hover,
@@ -44,17 +46,34 @@ body {
     overflow: hidden;
   }
 
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
+  }
   /* -----Buttons-------- */
 
-  .seondary {
+  .secondary {
     background-color: var(--accent-color);
     color: #FFFFFF;
   }
   .primary {
     background-color: #FFFFFF;
     color: var(--accent-color);
+    border-color: 1px solid var(--accent-color);
   }
 
+  .btn {
+    border-color: 1px solid var(--accent-color);
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+ padding: 11px 34px;
+ min-width: 130px;
+  }
 
 /* ----------Header------------ */
 
@@ -67,6 +86,9 @@ body {
 }
 /* site nav */
 
+.page-header {
+    background-color: #ccc;
+}
 
 .header-link {
     font-weight: 500;
@@ -79,8 +101,8 @@ body {
 }
 
 
-.button-primary,
-.button-secondary {
+.primary,
+.secondary {
         font-weight: 500;
         font-size: 15px;
         line-height: calc(18 / 15);
@@ -90,8 +112,9 @@ body {
     }
 
 .log-button {
-    color: #18A0FB;
+    color: var(--accent-color);
     background-color: #FFFFFF;
+    border: 1px var(--accent-color);
 }
 .reg-button {
     background: var(--accent-color);
@@ -100,11 +123,18 @@ color: #FFFFFF;
 
 /* ---------Hero----------------*/
 
-.hero-title {color: var(--title-text-color);
+.hero-section {
+    text-align: center;
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: var(--title-text-color);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-text-align: center;}
+}
 
 .hero-button {
     font-weight: 500;
@@ -113,16 +143,29 @@ text-align: center;}
         align-items: center;
         text-align: center;
         letter-spacing: -0.015em;
-        color: #FFFFFF;
-        background: #18A0FB;
+        color: var(--primery-white-color);
+        background: var(--accent-color);
+        border: 1px solid transparent;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+ padding: 15.3px 51.78px 15.7px 52.22px;
+ min-width: 192px;
 }
 
 /* Section and Examples*/
 
  /* Features */
+ 
+ .features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+ }
 
-.features-section-title
-{color: var(--title-text-color);
+.features-section-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: var(--title-text-color);
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
@@ -130,6 +173,8 @@ text-align: center;}
 }
 
     .features-title {
+        margin-top: 0;
+        margin-bottom: 24px;
         font-weight: 700;
         font-size: 24px;
         line-height: 1.5;
@@ -138,6 +183,8 @@ text-align: center;}
     }
     
 .features-text {
+    margin-top: 0;
+    margin-bottom: 34px;
         font-weight: 400;
 font-size: 18px;
 line-height: 1.67;
@@ -145,37 +192,43 @@ letter-spacing: -0.015em;
 color: rgba(0, 0, 0, 0.8);
 }
 
-.features-list .title,
-.work-list .title
- {color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.5;
- }
 
-.features-list .link {color: var(--accent-color);}
 
 /* features Button */
 
-.features-button {
+.features-link {
     font-weight: 500;
 font-size: 15px;
 line-height: calc(18 / 15);
 align-items: center;
 text-align: center;
 letter-spacing: -0.015em;
-color: #18A0FB;
+color: var(--accent-color);
 }
 
 /* ---------Work-------- */
 
+.work-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .work-title {
+    margin-top: 0;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: -0.015em;
     color: var(--title-text-color);
+}
+
+.work-item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.work-list > .work-item:nth-child(2n) {
+background-color: red;
 }
 
 .work-text {
@@ -187,8 +240,14 @@ color: #18A0FB;
 
 /* --------client-------- */
 
+.client-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
 
 .client-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 48px;
     line-height: 1.5;
     text-align: center;
@@ -197,6 +256,8 @@ color: #18A0FB;
 }
 
 .client-text {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
 line-height: 1.39;
 text-align: center;
@@ -205,7 +266,10 @@ color: rgba(0, 0, 0, 0.8);
 }
 
 /* -------registration------- */
-
+.registration {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .registration-text {
     font-size: 36px;
 line-height: 1.39;
@@ -220,6 +284,4 @@ line-height: calc(21 / 17);
 align-items: center;
 text-align: center;
 letter-spacing: -0.015em;
-color: #FFFFFF;
-background: #18A0FB;
 }
